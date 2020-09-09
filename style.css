@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+ul{
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
+
+.gallery-css{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-css{
+  padding-left: 10px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
