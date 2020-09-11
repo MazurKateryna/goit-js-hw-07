@@ -30,12 +30,11 @@ const createGallery = (images) => {
   const itemRef = document.createElement("li");
   itemRef.classList.add("item-css");
   const itemImageRef = document.createElement("img");
+  itemRef.appendChild(itemImageRef);
 
   itemImageRef.setAttribute("src", images.url);
   itemImageRef.setAttribute("alt", images.alt);
 
-  return galleryRef.append(itemRef,itemImageRef);
-
-  // return galleryRef;
+  return galleryRef.append(itemRef);
 };
 images.forEach(image => console.log(createGallery(image)));
